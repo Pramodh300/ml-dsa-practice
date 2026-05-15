@@ -1,4 +1,4 @@
-'''#Mean of list
+#Mean of list
 nums = [10,20,30,40]
 
 total_sum = sum(nums)
@@ -74,7 +74,7 @@ n = len(nums)
 mean = t/n
 print(mean)
 #median
-median = n//2
+median = nums[n//2]
 print(median)
 #mode
 freq = {}
@@ -122,7 +122,7 @@ running_sum = 0
 result = []
 for i, num in enumerate(nums, 1):
     running_sum += num
-    result.append(running_sum//i)
+    result.append(running_sum/i)
 print(result)
 
 
@@ -136,7 +136,7 @@ filtered = nums[1:-1]
 t = sum(filtered)
 n = len(filtered)
 
-print(t//n)
+print(t/n)
 
 
 
@@ -156,7 +156,7 @@ else:
     median = (c[n//2-1] + c[n//2])/2
 
 print(median)
-'''
+
 
 
 

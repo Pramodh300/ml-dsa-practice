@@ -1,4 +1,4 @@
-'''#Create linked list
+#Create linked list
 class Node:
     def __init__(self, data):
         self.data = data
@@ -128,7 +128,7 @@ current = head
 while current:
     print(current.data)
     current = current.next
-'''
+
     
 
 #Delete node

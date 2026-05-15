@@ -4,7 +4,7 @@ class Node:
         self.data = data
         self.next = None
 
-'''def merge_sorted_lists(head1, head2):
+def merge_sorted_lists(head1, head2):
     dummy = Node(0)
 
     current = dummy
@@ -51,7 +51,7 @@ n4.next = n5
 n5.next = n6
 
 merged = merge_sorted_lists(n1, n4)
-print_ll(merged)'''
+print_ll(merged)
 
 
 #Recursive approach

@@ -19,5 +19,3 @@ print(df)
 #Sort values
 sort_values = df.sort_values("Price", ascending=True)
 print(sort_values)
-
-print(df.isnull().sum())

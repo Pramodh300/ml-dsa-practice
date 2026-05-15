@@ -1,5 +1,5 @@
 import math
-'''#Vector addition
+#Vector addition
 a = [1,2]
 b = [3,4]
 
@@ -47,7 +47,7 @@ for n in range(len(b)):
 
 result = a1 + b1
 print(result)
-'''
+
 
 #Find largest vector element
 v = [4,9,2,7]

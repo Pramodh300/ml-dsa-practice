@@ -1,4 +1,3 @@
-'''
 #Sum of digits
 def sum_of_digits(n):
     if n == 0:
@@ -49,7 +48,7 @@ def product_digits(n):
     
     return n % 10 * product_digits(n//10)
 print(product_digits(1234))
-'''
+
 
 #Palindrome Number
 def check_palindrome(n, rev = 0):

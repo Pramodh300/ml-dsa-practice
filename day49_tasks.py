@@ -1,5 +1,5 @@
 from sklearn.metrics import precision_score, recall_score, f1_score, confusion_matrix
-'''#Precision & Recall
+#Precision & Recall
 TP = 40
 FP = 10
 FN = 20
@@ -25,7 +25,7 @@ TN, FP, FN, TP = cm.ravel()
 print("TP: ", TP)
 print("FP: ", FP)
 print("FN: ", FN)
-'''
+
 
 #Cross validation
 from sklearn.model_selection import cross_val_score

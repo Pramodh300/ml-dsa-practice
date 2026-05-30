@@ -1,4 +1,4 @@
-'''from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
@@ -73,7 +73,7 @@ mse = mean_squared_error(y_test, y_pred)
 
 print("Rsquare Score: ",r2)
 print("Mean Squared Error: ",mse)
-'''
+
 
 
 #Linear Regression without sklearn using Gradient Descent

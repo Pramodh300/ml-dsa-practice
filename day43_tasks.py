@@ -1,4 +1,4 @@
-'''''''''#Find and Fix Missing Values
+#Find and Fix Missing Values
 import pandas as pd
 import numpy as np
 
@@ -55,7 +55,7 @@ df['Name'] = df['Name'].str.title()
 df['Gender'] = df['Gender'].str.lower()
 
 print(df)
-'''
+
 
 #Clean Data + Train Model
 import numpy as np

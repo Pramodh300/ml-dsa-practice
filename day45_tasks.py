@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report, precision_score, recall_score, f1_score, confusion_matrix
 
-'''#Logistic Regression
+#Logistic Regression
 data = load_breast_cancer()
 X = data.data
 y = data.target
@@ -81,7 +81,7 @@ print("Accuracy: ", accuracy)
 print("Precision: ", precision)
 print("Recall: ", recall)
 print("F1 Score: ", f1)
-'''
+
 
 
 #Full Pipeline

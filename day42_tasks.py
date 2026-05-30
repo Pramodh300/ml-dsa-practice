@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
-'''#Liner Regression
+#Liner Regression
 size = np.array([600, 800, 1000, 1200, 1400, 1600, 1800, 2000]).reshape(-1, 1)
 price = np.array([150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000])
 
@@ -32,7 +32,7 @@ plt.title('Linear Regression: Size vs Price')
 
 plt.legend()
 plt.show()
-'''
+
 
 
 #Sort + Regression Combined

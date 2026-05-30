@@ -1,4 +1,4 @@
-'''#Merge Sort Basic
+#Merge Sort Basic
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -29,7 +29,7 @@ def merge(left_half, right_half):
 
 arr = [38, 2, 43, 12, 5]
 print(merge_sort(arr))
-'''
+
 
 
 #Merge sort count

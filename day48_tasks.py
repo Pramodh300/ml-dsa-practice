@@ -1,5 +1,5 @@
 from sklearn.metrics import confusion_matrix
-'''#Identify TP, TN, FP, FN
+#Identify TP, TN, FP, FN
 actual = [1, 1, 0, 0]
 predicted = [1, 0, 1, 0]
 cm = confusion_matrix(actual, predicted)
@@ -33,7 +33,7 @@ TP = 25
 FN = 5
 Recall = TP / (TP + FN)
 print(Recall)
-'''
+
 
 
 #Sklearn Metrics Practice

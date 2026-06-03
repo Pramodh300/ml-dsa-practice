@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 
-'''#Tune KNN Manually
+#Tune KNN Manually
 data = {
     'Study_Hours': [1,2,3,4,5,6,7,8],
     'Attendance': [50,55,60,65,70,75,80,90],
@@ -133,7 +133,7 @@ for c in [0.01, 0.1, 1, 10, 100]:
 
     print(f"\nC: {c}")
     print(f"Accuracy: {accuracy:.2f}")
-'''
+
 
 
 #GridSearchCV

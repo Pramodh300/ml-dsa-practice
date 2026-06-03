@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 #Random forest
-'''data = {
+data = {
     'Study_Hours': [1,2,3,4,5,6,7,8],
     'Attendance': [50,55,60,65,70,75,80,90],
     'Sleep_Hours': [4,5,5,6,6,7,8,8],
@@ -129,7 +129,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy with 200 trees: ", accuracy)
 prediction = model.predict(X_test)
 print(prediction)
-'''
+
 
 
 #Add noisy data

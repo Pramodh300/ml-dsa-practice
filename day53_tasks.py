@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import pandas as pd
 
-'''#Decision tree
+#Decision tree
 data = {
     'Study_Hours' : [1,2,3,6,7,8],
     'Attendance' : [50,55,60,75,80,90],
@@ -84,7 +84,8 @@ train_accuracy = accuracy_score(y_train, train_pred)
 test_accuracy = accuracy_score(y_test, test_pred)
 print(f"Train accuracy: {train_accuracy:.2f}")
 print(f"Test_accuracy: {test_accuracy:.2f}")
-'''
+
+
 
 #Mini Project
 data = {

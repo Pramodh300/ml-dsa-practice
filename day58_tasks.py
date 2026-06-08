@@ -1,17 +1,17 @@
 #Kaggle project
-from day57_dsa import new_data
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.tree import DecisionTreeClassifier
+import pickle
 
-
+#titanic dataset
 df = sns.load_dataset('titanic')
-df.head()
+'''df.head()
 df.info()
-df.describe()
+df.describe()'''
 df['age'] = df['age'].fillna(df['age'].mean())
 df['deck'] = df['deck'].cat.add_categories('Unknown')
 df['deck'] = df['deck'].fillna('Unknown')
@@ -19,7 +19,7 @@ df['embarked'] = df['embarked'].fillna('Unknown')
 df['embark_town'] = df['embark_town'].fillna('Unknown')
 df = df.drop_duplicates()
 
-sns.countplot(x='sex', hue='survived', data=df)
+'''sns.countplot(x='sex', hue='survived', data=df)
 plt.show()
 
 sns.countplot(x='pclass', hue='survived', data = df)
@@ -33,7 +33,7 @@ plt.show()
 
 sns.boxplot(x='survived', y='age', data = df)
 plt.title('Age vs Survival')
-plt.show()
+plt.show()'''
 
 
 df = df[['survived', 'pclass', 'sex', 'age', 'fare', 'embarked']]
@@ -53,13 +53,21 @@ param_grid = {
     'min_samples_split' : [2, 3, 5]
 }
 
-model = GridSearchCV(
+grid = GridSearchCV(
     DecisionTreeClassifier(random_state=42),
     param_grid,
     cv = 3
 )
 
-model.fit(X_train, y_train)
+grid.fit(X_train, y_train)
 
-with open('titanic_mode.pkl', 'wb') as file:
-    pickle.dump(model, file)
+best_model = grid.best_estimator_
+
+with open('titanic_model.pkl', 'wb') as file:
+    pickle.dump(best_model, file)
+
+with open('columns.pkl', 'wb') as file:
+    pickle.dump(X.columns.tolist(), file)
+
+print("Model saved successfully!")
+print("Columns saved successfully!")

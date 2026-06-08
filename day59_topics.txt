@@ -1,0 +1,155 @@
+Part 1: Vector Databases
+What is a Vector?
+
+A vector is a list of numbers that represents data.
+
+Example:
+
+Text:
+"Python is a programming language"
+
+Embedding:
+
+[0.23, 0.56, -0.12, 0.89, ...]
+
+The numerical representation of text is called an embedding.
+
+What is an Embedding?
+
+An embedding is a numerical representation of text, images, audio, or other data.
+
+Embeddings help computers understand meaning rather than just exact words.
+
+Example:
+
+"I love dogs"
+
+"Dogs are amazing"
+
+These sentences have similar meanings, so their embeddings will be close together in vector space.
+
+Why Do We Need Embeddings?
+
+Traditional databases search for exact keywords.
+
+Example:
+
+Document:
+"Flask is used to build APIs."
+
+User Query:
+"How can I create web services?"
+
+The words are different but the meaning is similar.
+
+Keyword search may fail.
+
+Embedding-based search can find the correct document because it understands meaning.
+
+This is called Semantic Search.
+
+What is Semantic Search?
+
+Semantic search finds information based on meaning rather than exact keyword matches.
+
+Example:
+
+Query:
+"How do I create APIs?"
+
+Relevant Document:
+"Flask is used for web services."
+
+Even though the words are different, the meanings are related.
+
+What is a Vector Database?
+
+A Vector Database stores embeddings and allows similarity search.
+
+Instead of storing only text:
+
+Document → Embedding → Storage
+
+When a query arrives:
+
+Query → Embedding → Similarity Search → Relevant Documents
+
+Examples:
+
+Pinecone
+ChromaDB
+Weaviate
+Milvus
+FAISS
+Pinecone
+
+Pinecone is a cloud-based vector database.
+
+Features:
+
+Fast vector search
+Scalable
+Production-ready
+Used by many AI companies
+
+Use Cases:
+
+Chatbots
+Recommendation systems
+RAG applications
+AI assistants
+ChromaDB
+
+ChromaDB is an open-source vector database.
+
+Features:
+
+Runs locally
+Easy to use
+Good for learning
+Popular in AI projects
+Pinecone vs ChromaDB
+
+Pinecone:
+
+Cloud
+Production use
+Scalable
+
+ChromaDB:
+
+Local
+Learning and prototyping
+Open source
+What is RAG?
+
+RAG stands for Retrieval-Augmented Generation.
+
+Workflow:
+
+Documents
+↓
+Chunking
+↓
+Embeddings
+↓
+Vector Database
+↓
+User Query
+↓
+Relevant Chunks Retrieved
+↓
+LLM Generates Answer
+
+Benefits:
+
+More accurate answers
+Can use custom documents
+Reduces hallucinations
+Real World Applications of Vector Databases
+ChatGPT with custom documents
+Customer support chatbots
+PDF question-answer systems
+Search engines
+Recommendation systems
+AI assistants

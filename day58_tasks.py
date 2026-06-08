@@ -61,19 +61,5 @@ model = GridSearchCV(
 
 model.fit(X_train, y_train)
 
-new_data = pd.DataFrame([{
-    'pclass' : 1,
-    'sex': 'female',
-    'age' : 29.0,
-    'fare' : 150.0,
-    'embarked' : 'C'
-}])
-
-new_data_encoded = pd.get_dummies(new_data, columns=['sex', 'embarked'], drop_first = True)
-
-new_passenger_aligned = new_data_encoded.reindex(columns = X.columns, fill_value = 0)
-
-prediction = model.predict(new_passenger_aligned)
-print(f"Prediction: {prediction[0]}")
-print(f"Best parameters: ", model.best_params_)
-print("Best Score: ", model.best_score_)
+with open('titanic_mode.pkl', 'wb') as file:
+    pickle.dump(model, file)
